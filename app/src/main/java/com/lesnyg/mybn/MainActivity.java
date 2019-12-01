@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:jtds:sqlserver://222.122.213.216/mashw08", "mashw08", "msts0850op");
             Statement statement = connection.createStatement();
-            ResultSet bannerResultSet = statement.executeQuery("select * from Su_배너이미지");
+            ResultSet bannerResultSet = statement.executeQuery("select * from Su_사진");
             byte b[];
 
 //            mList = new ArrayList<>();
@@ -149,6 +149,9 @@ public class MainActivity extends AppCompatActivity {
                 bitmap = BitmapFactory.decodeByteArray(b, 0, b.length);
 //                mList.add(new ImageModel(bitmap));
                 imageModelArrayList.add(new ImageModel(bitmap));
+
+
+
 
                 runOnUiThread(new Runnable() {
                     @Override
