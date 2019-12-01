@@ -151,7 +151,8 @@ public class MainActivity extends AppCompatActivity {
                 imageModelArrayList.add(new ImageModel(bitmap));
 
 
-
+//주석이 추가333
+                //
 
                 runOnUiThread(new Runnable() {
                     @Override
